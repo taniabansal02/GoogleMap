@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "31905877507",
+    "project_id": "mapexample-2d4d0",
+    "storage_bucket": "mapexample-2d4d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31905877507:android:a01201eaf56133784bc836",
+        "android_client_info": {
+          "package_name": "com.googlemapexample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPl1e0bDLaXB7BmSpWdBJFoEfvNl1Ukn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,10 +9,10 @@ import Geocoder from 'react-native-geocoding';
 const App = () => {
   const [markerPosition, setMarkerPosition] = useState(null);
   const [locationName, setLocationName] = useState(null);
-  // useEffect(() => {
-  //   // Initialize Geocoder API Key
-  //   Geocoder.init('AIzaSyAa4rkqNS8A14-YOiipz1WYS_ksJVvrEZQ');
-  // }, []);
+  useEffect(() => {
+    // Initialize Geocoder API Key
+    Geocoder.init('AIzaSyAa4rkqNS8A14-YOiipz1WYS_ksJVvrEZQ');
+  }, []);
 
 
   const onLongPress = async e => {
@@ -20,13 +20,13 @@ const App = () => {
     setMarkerPosition(coordinate);
     console.log('cooordinates', coordinate);
     
-    // try {
-    //   const address = await Geocoder.from(41.89, 12.49);
-    //   const locationName = address.results[0].formatted_address;
-    //   setLocationName(locationName);
-    // } catch (error) {
-    //   console.error("Error fetching location:", error);
-    // }
+    try {
+      const address = await Geocoder.from(41.89, 12.49);
+      const locationName = address.results[0].formatted_address;
+      setLocationName(locationName);
+    } catch (error) {
+      console.error("Error fetching location:", error);
+    }
   };
   const onPositionChange = (e) => {
     const cords = e.nativeEvent.coordinate;
